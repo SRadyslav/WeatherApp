@@ -23,4 +23,7 @@ body {
     overflow: hidden;
     border-radius: 18px;
     font-family: 'Roboto', sans-serif;
+
+
+    transition: .4s ease-in-out;
 }

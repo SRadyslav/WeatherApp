@@ -2,11 +2,14 @@ import React from 'react'
 import no404 from '../../assets/404.png'  
 import './styles.css'
 
-export const NotFound = () => {
+type NotFoundProps = {
+  text: string
+}
+export const NotFound = ({text}:NotFoundProps) => {
   return (
     <div className='notFound'>
       <img src={no404} alt='...' />
-      <p>Oops! Invalid Location :/</p>
+      <p>Oops, {text}</p>
     </div>
   )
 }

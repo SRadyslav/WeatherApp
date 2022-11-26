@@ -1,7 +1,14 @@
 .notFound {
     width: 100%;
+    display: block;
     text-align: center;
     margin-top: 50px;
+    scale: 0;
+    opacity: 0;
+
+    animation: .5s fadeIn forwards;
+    animation-delay: .3s;
+    
 }
 
 .notFound img {
@@ -13,4 +20,11 @@
     font-size: 22px;
     font-weight: 500;
     margin-top: 12px;
+}
+
+@keyframes fadeIn {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
